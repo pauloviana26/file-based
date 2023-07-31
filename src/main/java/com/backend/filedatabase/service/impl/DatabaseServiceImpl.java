@@ -107,7 +107,7 @@ public class DatabaseServiceImpl implements DatabaseService {
         for (String row : rows) {
             String[] rowData = row.split(",");
             long rowId = Long.parseLong(rowData[0]);
-            if (rowId > maxId && rowId != 0) {
+            if (rowId > maxId) {
                 maxId = rowId;
             }
         }
